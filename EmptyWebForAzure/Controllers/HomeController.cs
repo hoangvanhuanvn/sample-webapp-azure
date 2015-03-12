@@ -9,11 +9,11 @@ namespace EmptyWebForAzure.Controllers
         public ActionResult Index()
         {
             var sb = new StringBuilder();
-            sb.Append("Azure test created at 10:20 12/03/2015 by huanhvhd@gmail.com");
+            sb.Append("Azure test created at 10:20 12/03/2015");
             sb.Append("<br>");
             sb.Append("Time on server is " + DateTime.Now);
             sb.Append("<br>");
-            sb.Append("The env - OSVersion: " + Environment.OSVersion);
+            sb.Append("The env - OSVersion: " + Environment.OSVersion + ", MachineName: " + Environment.MachineName);
             sb.Append("<br>");
             sb.Append("Repository is available at https://github.com/hoangvanhuanvn/sample-webapp-azure");
 
